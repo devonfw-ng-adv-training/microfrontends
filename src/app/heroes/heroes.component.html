@@ -10,6 +10,7 @@
   </button>
 </div>
 
+<button (click)="getHeroes()">refresh</button>
 <ul class="heroes">
   <li *ngFor="let hero of heroes">
     <a routerLink="/detail/{{hero.id}}">
