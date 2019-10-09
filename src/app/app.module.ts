@@ -9,7 +9,6 @@ import { HeroDetailComponent }  from './hero-detail/hero-detail.component';
 import { HeroesComponent }      from './heroes/heroes.component';
 import { HeroSearchComponent }  from './hero-search/hero-search.component';
 import { MessagesComponent }    from './messages/messages.component';
-import { HeroRowComponent } from './heroes/hero-row/hero-row.component';
 
 @NgModule({
   imports: [
@@ -23,8 +22,7 @@ import { HeroRowComponent } from './heroes/hero-row/hero-row.component';
     HeroesComponent,
     HeroDetailComponent,
     MessagesComponent,
-    HeroSearchComponent,
-    HeroRowComponent
+    HeroSearchComponent
   ],
   bootstrap: [ AppComponent ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
