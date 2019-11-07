@@ -1,6 +1,6 @@
 <div>
   <a (click)="select()">
-    <span class="badge">{{heroId}}</span> {{name}}
+    <span class="badge">{{this._heroId$ | async}}</span> {{(this.hero$ | async)?.name}}
   </a>
   <button class="delete" title="delete hero"
           (click)="delete()">x</button>
