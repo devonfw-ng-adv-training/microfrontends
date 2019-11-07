@@ -6,10 +6,10 @@
   <base href="./">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- needed now because we're not running in an angular application -->
+  <script src="./zone.js"></script>
+  <!-- our single bundle -->
   <script src="./main-es2015.js"></script>
-  <script src="./polyfills-es2015.js"></script>
-  <script src="./runtime-es2015.js"></script>
-  <script src="./vendor-es2015.js"></script>
 </head>
 <body>
 <p>Simple inclusion of hero-row:</p>
