@@ -1,5 +1,5 @@
 <div>
-  <a routerLink="/detail/{{heroId}}">
+  <a (click)="select()">
     <span class="badge">{{heroId}}</span> {{name}}
   </a>
   <button class="delete" title="delete hero"

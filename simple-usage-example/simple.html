@@ -15,12 +15,16 @@
 <p>Simple inclusion of hero-row:</p>
 <hero-row hero-id="17" name="Hugo"></hero-row>
 <hero-row hero-id="18" name="Karl"></hero-row>
-<p>Check browser console for delete events.</p>
+<p>Check browser console for events.</p>
 <script>
-document.querySelectorAll('hero-row').forEach(
-    (heroRow) =>
-        heroRow.addEventListener('onDelete',
-            (e) => console.log('got delete event for id ', e.detail, ' and the type of that value is ', typeof e.detail)));
+    document.querySelectorAll('hero-row').forEach(
+        (heroRow) => {
+            heroRow.addEventListener('onSelect',
+            (event) => console.log('got select event for id ', event.detail, ' and the type of that value is ', typeof event.detail));
+            heroRow.addEventListener('onDelete',
+            (e) => console.log('got delete event for id ', e.detail, ' and the type of that value is ', typeof e.detail));
+        }
+    );
 </script>
 </body>
 </html>

@@ -15,11 +15,18 @@ export class HeroRowComponent implements OnInit {
   name: string;
 
   @Output()
+  onSelect = new EventEmitter<number>();
+
+  @Output()
   onDelete = new EventEmitter<number>();
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  select() {
+    this.onSelect.emit(this.heroId);
   }
 
   delete() {

@@ -13,6 +13,6 @@
 <button (click)="getHeroes()">refresh</button>
 <ul class="heroes">
   <li *ngFor="let hero of heroes">
-    <hero-row [heroId]="hero.id" [name]="hero.name" (onDelete)="delete(hero)"></hero-row>
+    <hero-row [heroId]="hero.id" [name]="hero.name" (onSelect)="select(hero)" (onDelete)="delete(hero)"></hero-row>
   </li>
 </ul>

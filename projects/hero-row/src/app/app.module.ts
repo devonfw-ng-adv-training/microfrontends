@@ -1,14 +1,12 @@
 import {ApplicationRef, DoBootstrap, Injector, NgModule} from '@angular/core';
 import { HeroRowComponent } from './hero-row.component';
-import {RouterModule} from '@angular/router';
 import {createCustomElement} from '@angular/elements';
 import {BrowserModule} from '@angular/platform-browser';
 
 @NgModule({
   declarations: [HeroRowComponent],
   imports: [
-    BrowserModule,
-    RouterModule.forRoot([])
+    BrowserModule
   ],
   exports: [HeroRowComponent],
   entryComponents: [HeroRowComponent]

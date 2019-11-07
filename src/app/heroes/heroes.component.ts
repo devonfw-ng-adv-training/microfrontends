@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-heroes',
@@ -11,7 +12,9 @@ import { HeroService } from '../hero.service';
 export class HeroesComponent implements OnInit {
   heroes: Hero[] = [];
 
-  constructor(private heroService: HeroService) { }
+  constructor(private heroService: HeroService,
+              private router: Router) {
+  }
 
   ngOnInit() {
     this.getHeroes();
@@ -29,6 +32,10 @@ export class HeroesComponent implements OnInit {
       .subscribe(hero => {
         this.heroes.push(hero);
       });
+  }
+
+  select(hero: Hero): void {
+    this.router.navigate(['detail', hero.id]);
   }
 
   delete(hero: Hero): void {
