@@ -9,7 +9,10 @@
     "test": "ng test",
     "build": "ng build --prod",
     "e2e": "ng e2e",
-    "ng": "ng"
+    "ng": "ng",
+    "hero-row-build": "ng build hero-row",
+    "hero-row-copy-dist-to-assets": "cpx dist/hero-row/*es2015.js src/assets && cpx dist/hero-row/*es2015.js simple-usage-example",
+    "hero-row-build-and-copy": "npm run hero-row-build && npm run hero-row-copy-dist-to-assets"
   },
   "keywords": [],
   "author": "",
@@ -38,6 +41,7 @@
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "^2.0.4",
     "@types/node": "~8.9.4",
+    "cpx": "^1.5.0",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",

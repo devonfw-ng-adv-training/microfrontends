@@ -15,7 +15,7 @@ export class HeroRowComponent implements OnInit {
   name: string;
 
   @Output()
-  onDelete = new EventEmitter<void>();
+  onDelete = new EventEmitter<number>();
 
   constructor() { }
 
@@ -23,7 +23,7 @@ export class HeroRowComponent implements OnInit {
   }
 
   delete() {
-    this.onDelete.emit(undefined);
+    this.onDelete.emit(this.heroId);
   }
 
 }
