@@ -121,6 +121,7 @@ Steps:
 Reflection:
 - What does it mean that custom elements run in their own scope?
 - How can we get shared services in a microfrontend application?
+- What is the lifecycle of a service in a custom element?
 
 # Possible future extensions of these exercises
 
