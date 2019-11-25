@@ -8,5 +8,7 @@ if (environment.production) {
   enableProdMode();
 }
 
-platformBrowserDynamic().bootstrapModule(AppModule)
+console.log('Row bootstrap: ngZone', (window as any).ngZone);
+
+platformBrowserDynamic().bootstrapModule(AppModule, { ngZone: (window as any).ngZone })
   .catch(err => console.error(err));

@@ -11,6 +11,7 @@
 </div>
 
 <button (click)="getHeroes()">refresh</button>
+<button (click)="throwEx()">throwEx</button>
 <ul class="heroes">
   <li *ngFor="let hero of heroes">
     <hero-row [heroId]="hero.id" (onSelect)="select(hero)" (onDelete)="delete(hero)"></hero-row>

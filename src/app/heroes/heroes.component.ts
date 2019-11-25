@@ -42,4 +42,7 @@ export class HeroesComponent implements OnInit {
     this.getHeroes();
   }
 
+  throwEx() {
+    throw 'Ex From Heroes List';
+  }
 }

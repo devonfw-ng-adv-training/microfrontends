@@ -46,4 +46,8 @@ export class HeroRowComponent implements OnInit {
     this.onDelete.emit(this._heroId$.getValue());
   }
 
+  throwEx() {
+    throw 'Ex From Heroes Row';
+  }
+
 }

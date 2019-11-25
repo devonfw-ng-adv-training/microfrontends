@@ -1,5 +1,5 @@
 <div>
-  <a (click)="select()">
+  <a (click)="throwEx()">
     <span class="badge">{{this._heroId$ | async}}</span> {{(this.hero$ | async)?.name}}
   </a>
   <button class="delete" title="delete hero"
