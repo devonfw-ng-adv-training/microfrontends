@@ -36,9 +36,10 @@ Details below.
 
 # Part 1 - Custom Element & Shadow DOM
 
-Goal: Extract a Custom Element for the row in the heroes list and use it
-Start branch: start-part-1
-Sample solution branch: start-part-2
+**Goal:** Extract a Custom Element for the row in the heroes list and use it  
+**Start branch:** start-part-1  
+**Optional:** start-part-1b which has the row component already extracted as Angular Component  
+**Sample solution branch:** start-part-2
 
 Considerations:
 - What API should the row component have?
@@ -71,9 +72,9 @@ Reflection:
 
 # Part 2 - Separate Deployment
 
-Goal: Build a separately deployable file with the Custom Element
-Start branch: start-part-2
-Sample solution branch: start-part-3
+**Goal:** Build a separately deployable file with the Custom Element  
+**Start branch:** start-part-2  
+**Sample solution branch:** start-part-3
 
 Steps:
 - Create an Angular sub project application
@@ -107,9 +108,9 @@ Reflection:
 
 # Part 3: Independent Custom Elements
 
-Goal: Let the hero row use the hero service directly for data loading and deletion
-Start branch: start-part-3
-Sample solution branch: end-part-3
+**Goal:** Let the hero row use the hero service directly for data loading and deletion  
+**Start branch:** start-part-3  
+**Sample solution branch:** end-part-3
 
 Steps:
 - Let the hero row only have the ID as input and call delete on its own
