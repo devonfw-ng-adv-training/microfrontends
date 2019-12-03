@@ -1,7 +1,10 @@
 # microfrontends
 Code for the microfrontend exercises of the Angular Advanced training
 
-# Structure
+This contains one main exercise with three parts and one sample solution
+for creating npm modules out of Angular modules.
+
+# Structure Microfrontend - Web Components
 
 ## Goal
 
@@ -123,6 +126,46 @@ Reflection:
 - What does it mean that custom elements run in their own scope?
 - How can we get shared services in a microfrontend application?
 - What is the lifecycle of a service in a custom element?
+
+# Structure Microfrontends - npm Modules
+
+**Goal:** Create a re-usable npm module for the row in the heroes list and use it
+**Start branch:** start-part-1
+**Optional:** start-part-1b which has the row component already extracted as Angular Component
+**Sample solution branch:** example-npm-module
+
+Considerations:
+- What API should the row component have?
+
+Steps:
+- Create an Angular component for the row
+  - Hint: ng g c heroes/heroRow
+  - Define API and move code/html/css
+- Update list (HeroesComponent) to use the new component
+- Check: Still working as before?
+- Create a library
+  - Hint: ng g library hero-row
+- Move your code for the row to the library
+  - Make sure everything in the old place is deleted
+  - Build the library
+  - Find a solution for the routerLink
+- Change the Heroes application to use the library
+- Test: Does everything work as before?
+  - If not: fix it :-)
+- Rearrange your configuration so that both library and application can be built
+
+
+Reflection:
+- How is the directory structure organized?
+  - Where are the important configuration and entry files?
+- What does the build result contain, and what not?
+- What types of libraries can you think of? Would you organize them differently?
+- What do you do with the main application when using a separate repository?
+- Where do you put the library for re-use?
+- What is missing for re-usability?
+
+Reference:
+- https://angular.io/guide/creating-libraries
 
 # Possible future extensions of these exercises
 
