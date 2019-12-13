@@ -129,3 +129,6 @@ Reflection:
 - keep up to date with angular
   - especially update the code concerning the Ivy Compiler
 - add an example on how shared services can work
+- add an example on how a method call from parent to angular element can work
+  - this is not trivial because public methods are not exported, only @Input and @Output. 
+  You have to use element.ngElementStrategy.componentRef.instance
