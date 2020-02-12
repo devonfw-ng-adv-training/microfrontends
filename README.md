@@ -53,12 +53,15 @@ Steps:
   - Define API and move code/html/css
 - Update list (HeroesComponent) to use the new component
 - Check: Still working as before?
+(start-part-1b begins here)
 - Add angular element support to project
   - Hint: ng add @angular/elements
 - Create a Custom Element out of the Angular Component
   - Hint: in a central place use createCustomElement(...) and customElements.define
-  - add the row to module's entry components
-- Use the Custom Element instead of the Angular Component
+  - add the row component to module's entry components
+  - Hint: you do not need to create a separate module yet but can use the AppModule
+- In the HeroesComponent, use the Custom Element instead of the Angular Component
+  - What does the error during runtime mean?
   - Hint: CUSTOM_ELEMENTS_SCHEMA
 - Activate Shadow Dom
   - Hint: encapsulation: ViewEncapsulation.ShadowDom
@@ -93,6 +96,7 @@ Steps:
 - Create a simple standalone html page that tests the custom element
   - add some rows with input data and register for an output event
 - Use the custom element in our Heroes-Application
+  - Don't forget to delete the old code for the row...
   - What does the error mean?
   - Hint: Use ngx-build-plus
   - Hint: zone.js is available in node_modules/zone.js/dist/zone.js
