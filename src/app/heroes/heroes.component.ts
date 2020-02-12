@@ -34,12 +34,12 @@ export class HeroesComponent implements OnInit {
       });
   }
 
-  select(hero: Hero): void {
-    this.router.navigate(['detail', hero.id]);
+  select(heroId: number): void {
+    this.router.navigate(['detail', heroId]);
   }
 
-  delete(hero: Hero): void {
-    this.heroService.deleteHero(hero).subscribe( () => this.getHeroes());
+  delete(heroId: number): void {
+    this.heroService.deleteHero(heroId).subscribe( () => this.getHeroes());
   }
 
 }

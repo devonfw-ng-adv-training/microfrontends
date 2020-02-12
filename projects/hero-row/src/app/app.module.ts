@@ -5,10 +5,8 @@ import {BrowserModule} from '@angular/platform-browser';
 
 @NgModule({
   declarations: [HeroRowComponent],
-  imports: [
-    BrowserModule
-  ],
-  exports: [HeroRowComponent],
+  imports: [BrowserModule],
+  exports: [],
   entryComponents: [HeroRowComponent]
 })
 export class AppModule implements DoBootstrap {
