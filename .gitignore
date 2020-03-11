@@ -2,3 +2,8 @@
 *.iml
 /dist
 /.idea
+/src/assets/main-es2015.js
+/src/assets/polyfills-es2015.js
+/simple-usage-example/main-es2015.js
+/simple-usage-example/polyfills-es2015.js
+/simple-usage-example/zone.js
